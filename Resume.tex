@@ -5,8 +5,8 @@
 % Updated: 12/03/2015
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[10pt]{article} %Sets the default text size to 10pt and class to article.
-%\documentclass[9pt]{extbook} %Swap with above in case of need of smaller font
+%\documentclass[10pt]{article} %Sets the default text size to 10pt and class to article.
+\documentclass[9pt]{extbook} %Swap with above in case of need of smaller font
 %------------------------Dimensions--------------------------------------------
 \topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
 \oddsidemargin=0.0in %length of margin on sides for odd pages
@@ -16,11 +16,12 @@
 \headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
 \headsep=0pt %Increase to increase white space in between headers and the top of the page
 \textheight=9.0in %How tall the text body is allowed to be on each page
-
+\parindent = 0.0in
 \pagenumbering{gobble}%resets the age numbering
 
 \usepackage{multicol, enumerate}%allows text to be split into multiple columns.
 \usepackage[margin=0.6in]{geometry}%sets all the margins of the page to 0.75 inches
+\usepackage{scrextend}
 
 \begin{document}
 	\centerline{\LARGE \bf Victoria Weaver}
@@ -35,9 +36,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent{\textbf{\large Objective}}
-\newline
-	To obtain a cooperative education position or internship in the field of Computer Engineering for the Summer/Fall of 2016.
-
+\begin{addmargin}[2cm]{0cm}
+	To obtain a cooperative education position in the field of Computer Engineering for the Summer/Fall block of 2016.
+\end{addmargin}
 %%%%%%%%%%%%
 
 \bigskip
@@ -48,55 +49,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent{\textbf{\large Education}}
-\newline
+\begin{addmargin}[2cm]{0cm}
 	Rochester Institute of Technology	\hfill Fall 2013 - Present
 	\\ Major/Minor: Computer Engineering/Mathematics
 	\\ Expected Graduation: December 2017
 	\\ GPA: 3.30
-	\\ Relevant Courses: \begin{multicols}{3}
-		\begin{itemize}
-			\itemsep0em 
-			\item Advanced Linear Algebra
-			\item Applied Programming
-			\item Assembly Language with Lab
-			\item Circuits I with Lab
-			\item Circuits II
-			\item Codes and Ciphers
-			\item Computer Organization
-			\item Data and Communication Networks
-			\item Digital Signal Processing
-			\item Digital Systems Design I and II with Labs
-			\item Electronics I with Lab
-			\item Interface and Digital Electronics with Lab
-			
-		\end{itemize}
-		\end{multicols}
-%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Experience
-% Most recent/relevant work experience
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent{\textbf{\large Experience}}
-\newline
-	\textbf{Parsons Government Services}- Centreville,VA			\hfill June 2015 - August 2015 \\
-	\textit{Personal Computer Support Tech Intern}	\hfill http://parsons.com \\
-	\indent Worked on Java backend development in an Eclipse environment with a focus on fixing existing issues in a networking security application.  Collaborated on the documentation of the installation of a service for the project on a clean virtual machine running Ubuntu.  Tested and verified different components of the application and submitted defect tickets through JIRA.  Collaborated in code reviews using Review Board.
-	
-	\medskip
-
-	\noindent \textbf{Rochester Institute of Technology}- Rochester, NY 		\hfill August 2014 - December 2014 \\
-	\textit{Student Lab Instructor}								\hfill http://rit.edu \\
-	\indent Lab instructor, individual tutor, and grader of assignments for students enrolled in the introductory computer science course sequence.
-	
-	\medskip
-
-	\noindent \textbf{Rochester Institute of Technology}- Rochester, NY 	\hfill June 2014 - August 2014 \\
-	\textit{Student Developer}									\hfill http://rit.edu \\
-	\indent Worked on the development of a keyboard and screen reader compatible ``drag and drop" programming environment based off of the Massachussetts Institute of Technology's ``Scratch" program.  Aided in the development of Inclusive Exploring Computer Science curriculum for visually impaired students.
-
+\end{addmargin}
 %%%%%%%%%%%%
 
 \bigskip
@@ -107,10 +65,44 @@
 % Listed in order from most to least skilled/familiar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent{\textbf{\large Technical Skills}}
-\newline
-	Software: VHDL, C, \LaTeX, Java, Python, Xilinx, ModelSim, Altera Quartus II, Assembly (ARM)\\
-	Hardware: Soldering, Power Supplies, Multimeter, Oscilloscope
+\noindent{\textbf{\large Technical Skills}}\\
+\begin{addmargin}[2cm]{0cm}
+\begin{tabular}{l l}
+		\hline
+		\textbf{Software}	&	VHDL, C, \LaTeX, Java, Python, Xilinx, ModelSim, Altera Quartus II, Assembly (ARM)\\
+							&	\\
+		\textbf{Hardware} 	&	Soldering, Power Supplies, Multimeter, Oscilloscope\\
+		\hline
+	\end{tabular}
+\end{addmargin}
+%%%%%%%%%%%%
+
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+% Most recent/relevant work experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent{\textbf{\large Experience}}
+\begin{addmargin}[2cm]{0cm}
+	\textbf{Parsons Government Services}- Centreville,VA			\hfill June 2015 - August 2015 \\
+	\textit{Personal Computer Support Tech Intern}	\hfill http://parsons.com \\
+
+	Worked on Java backend development in an Eclipse environment with a focus on fixing existing issues in a networking security application.  Collaborated on the documentation of the installation of a service for the project on a clean virtual machine running Ubuntu.  Tested and verified different components of the application and submitted defect tickets through JIRA.  Collaborated in code reviews using Review Board.\\
+	
+
+	\textbf{Rochester Institute of Technology}- Rochester, NY 		\hfill August 2014 - December 2014 \\
+	\textit{Student Lab Instructor}								\hfill http://rit.edu \\
+
+	\indent Lab instructor, individual tutor, and grader of assignments for students enrolled in the introductory computer science course sequence.\\
+
+
+	\textbf{Rochester Institute of Technology}- Rochester, NY 	\hfill June 2014 - August 2014 \\
+	\textit{Student Developer}									\hfill http://rit.edu \\
+
+	Worked on the development of a keyboard and screen reader compatible ``drag and drop" programming environment based off of the Massachussetts Institute of Technology's ``Scratch" program.  Aided in the development of Inclusive Exploring Computer Science curriculum for visually impaired students.
+\end{addmargin}
 %%%%%%%%%%%%
 
 \bigskip
@@ -122,13 +114,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent{\textbf{\large Personal Projects}}	\hfill http://github.com/VictoriaWeaver\\
-\smallskip
-	Infrared Proximity Sensor- IR LEDs are used for proximity sensing.  The proximity of an object is displayed on a scrolling 7-segment display and indicated with auditory feedback. \\
+\begin{addmargin}[2cm]{0cm}
+	\textbf{Infrared Proximity Sensor}\\
+	IR LEDs are used for proximity sensing.  The proximity of an object is displayed on a scrolling 7-segment display and indicated with auditory feedback. \\
 
-	\noindent LED Table- LEDs are connected in a grid with cover of diffused Plexiglass, which is connected to Arduino Uno board and programmed to make various patterns and animations.\\
+	\textbf{LED Table}\\
+	LEDs are connected in a grid with cover of diffused Plexiglass, which is connected to Arduino Uno board and programmed to make various patterns and animations.\\
 
-	\noindent Encryption Algorithm Speeds- RSA and a symmetric key algorithm are implemented in Java and the runtime speeds are used to compare the algorithms.
-	
+	\textbf{Encryption Algorithm Speeds}\\
+	RSA and a symmetric key algorithm are implemented in Java and the runtime speeds are used to compare the algorithms.
+\end{addmargin}
 %%%%%%%%%%%%
 
 \bigskip
@@ -139,11 +134,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent{\textbf{\large Interests and Activities}}
-	\newline
-		CSH (Computer Science House)	\hfill http://csh.rit.edu\\
-			\indent $\bullet$ Executive Board Evaluations Director\\
-			\indent $\bullet$ Charity Project Advisor\\
-		Broomball (Intramural)- Team Captain
+	\begin{addmargin}[2cm]{0cm}
+		CSH (Computer Science House)	\hfill http://csh.rit.edu
+		\begin{itemize}
+			\item Executive Board Evaluations Director
+			\item Charity Project Advisor
+		\end{itemize}
+		Intramural Broomball
+	\end{addmargin}
 %%%%%%%%%%%%
 	
 \end{document}
