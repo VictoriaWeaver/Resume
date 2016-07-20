@@ -1,147 +1,128 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Victoria Weaver
-% Summer 2016
-%
-% Updated: 07/19/2016
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,margin,line]{resume}
+\usepackage[defblank]{paralist}
+\usepackage{pdfpages}
+\usepackage{anysize}
+\usepackage[unicode]{hyperref}
+\hypersetup{
+	pdftitle={Victoria Weaver's Resume},
+	pdfauthor={Victoria Weaver},
+	pdfborder={0 0 0},
+	unicode=true
+}
 
-%\documentclass[10pt]{article} %Sets the default text size to 10pt and class to article.
-\documentclass[9pt]{extbook} %Swap with above in case of need of smaller font
-%------------------------Dimensions--------------------------------------------
-\topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
-\oddsidemargin=0.0in %length of margin on sides for odd pages
-\evensidemargin=0in %length of margin on sides for even pages
-\textwidth=6.5in %How wide you want your text to be
-\marginparwidth=0.5in
-\headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
-\headsep=0pt %Increase to increase white space in between headers and the top of the page
-\textheight=9.0in %How tall the text body is allowed to be on each page
-\parindent = 0.0in
-\pagenumbering{gobble}%resets the age numbering
 
-\usepackage{multicol, enumerate}%allows text to be split into multiple columns.
-\usepackage[margin=0.6in]{geometry}%sets all the margins of the page to 0.75 inches
-\usepackage{scrextend}
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+  }
+
+\marginsize{0.375in}{1.875in}{0.375in}{0.375in}
+
+\setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
+\setdefaultleftmargin{0em}{}{}{}{}{}
+\setdefaultenum{(a)}{(1)}{}{}{}{}
+
+\newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
+\newcommand{\rdate}[1]{\hfill {\small #1}}
+\renewcommand{\employer}[5]{ \item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
 
 \begin{document}
-	\centerline{\LARGE \bf Victoria Weaver}
-	\centerline{vweaver2013@gmail.com $\bullet$ (313) 207 - 3039}
-\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
+\name{\Large{Victoria Weaver} \hskip 0pt plus 2fil minus 0pt {\small{\href{mailto:vweaver2013@gmail.com}{vweaver2013@gmail.com} - (313) 207-3039}}}
+\begin{resume}
+\section{\mysidestyle Objective}
+    To obtain a cooperative education position in the field of Computer Engineering for the Summer of 2017.
+\section{\mysidestyle Work Experience}
+	\begin{asparadesc}
+        \employer{Critical Link LLC}{Syracuse, NY}{May 2016 - Present}{Engineering Intern}
+        {http://criticallink.com/}
+        \small
+        Currently aiding in the development of the Android Application for a bacteria scanning device. 
+        Android Studio is used to develop the application for Android 4.2.  Components of the application 
+        contributed to include analysis of the test results of scanning the bacteria through the use 
+        of plots as well as the grouping of locations to be tested in order to improve organization 
+        and increase efficiency of testing.
+        \normalsize
+        \\
+        \employer{Parsons Government Services}{Centreville, VA}{Summer 2015}{Personal Computer Support Tech Intern}
+        {http://parsons.com/}
+        \small
+        Worked on Java back end development in an Eclipse environment with a focus on fixing existing 
+        issues in a networking security application. Collaborated on the documentation of the installation 
+        of a service for the project on a clean virtual machine running Ubuntu. Tested and verified 
+        different components of the application and submitted defect tickets through JIRA.  Collaborated 
+        in code reviews using Review Board.
+        \normalsize
+        \\
+        \employer{Rochester Institute of Technology}{Rochester, NY}{Fall 2014}{Student Lab Instructor}
+        {http://rit.edu/}
+        \small
+        Lab instructor, individual tutor, and grader of assignments for students enrolled in the 
+        introductory computer science course sequence.
+        \normalsize
+        \\
+        \employer{Rochester Institute of Technology}{Rochester, NY}{Summer 2014}{Student Developer}
+        {http://rit.edu/}
+        \small
+        Worked on the development of a keyboard and screen reader compatible ``drag and drop" programming 
+        environment based off of the Massachusetts Institute of Technology's ``Scratch" program.  Aided 
+        in the development of Inclusive Exploring Computer Science curriculum for visually impaired students.
+        \normalsize
+        \\
+    \end{asparadesc}
 
-\bigskip
+\section{\mysidestyle Education}
+	\begin{compactdesc}
+		\item[Rochester Institute of Technology] - Rochester, NY \rdate{August 2013 - Present} \\
+            Major: Computer Engineering, Minor: Mathematics \rdate{GPA: 3.337} \\
+            Graduation: May 2016
+	\end{compactdesc}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Objective 
-% The position/type of job intended
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\mysidestyle Technical Skills \& Certifications}
+    \begin{compactdesc}
+		\item[Software] \begin{inparaenum} { \small
+            VHDL,
+            \LaTeX,
+			Java,
+			C,
+            ARM and MIPS Assembly,
+            Python
+		} \end{inparaenum}
+		\item[Hardware] \begin{inparaenum} { \small
+			Soldering,
+            Power Supplies,
+            Multimeters,
+            Oscilloscopes
+		} \end{inparaenum}
+        \item[Tools] \begin{inparaenum} { \small
+            Git,
+            Xilinx,
+            ModelSim,
+            Android Studio,
+            Altera Quartus II
+        } \end{inparaenum}
+        \item[Certifications] \begin{inparaenum} { \small
+            Electrostatic Discharge Certification, 2016   
+        } \end{inparaenum}
+	\end{compactdesc}
 
-\noindent{\textbf{\large Objective}}
-\begin{addmargin}[2cm]{0cm}
-	To obtain a cooperative education position in the field of Computer Engineering for the Summer of 2017.
-\end{addmargin}
-%%%%%%%%%%%%
-
-\bigskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Education
-% School, degree, DoG, and GPA
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent{\textbf{\large Education}}
-\begin{addmargin}[2cm]{0cm}
-	Rochester Institute of Technology	\hfill Fall 2013 - Present
-	\\ Major/Minor: Computer Engineering/Mathematics
-	\\ Expected Graduation: December 2017
-	\\ GPA: 3.337
-\end{addmargin}
-%%%%%%%%%%%%
-
-\bigskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Technical Skills
-% Software and hardware skills/familiarity 
-% Listed in order from most to least skilled/familiar
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent{\textbf{\large Technical Skills}}\\
-\begin{addmargin}[2cm]{0cm}
-\begin{tabular}{l l}
-		\hline
-		\textbf{Software}	&	VHDL, C, \LaTeX, Java, Python, Xilinx, ModelSim, Altera Quartus II, Assembly (ARM)\\
-							&	\\
-		\textbf{Hardware} 	&	Soldering, Power Supplies, Multimeter, Oscilloscope\\
-		\hline
-	\end{tabular}
-\end{addmargin}
-%%%%%%%%%%%%
-
-\bigskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Experience
-% Most recent/relevant work experience
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent{\textbf{\large Experience}}
-\begin{addmargin}[2cm]{0cm}
-	\textbf{Parsons Government Services}- Centreville,VA			\hfill June 2015 - August 2015 \\
-	\textit{Personal Computer Support Tech Intern}	\hfill http://parsons.com \\
-
-	Worked on Java backend development in an Eclipse environment with a focus on fixing existing issues in a networking security application.  Collaborated on the documentation of the installation of a service for the project on a clean virtual machine running Ubuntu.  Tested and verified different components of the application and submitted defect tickets through JIRA.  Collaborated in code reviews using Review Board.\\
-	
-
-	\textbf{Rochester Institute of Technology}- Rochester, NY 		\hfill August 2014 - December 2014 \\
-	\textit{Student Lab Instructor}								\hfill http://rit.edu \\
-
-	\indent Lab instructor, individual tutor, and grader of assignments for students enrolled in the introductory computer science course sequence.\\
-
-
-	\textbf{Rochester Institute of Technology}- Rochester, NY 	\hfill June 2014 - August 2014 \\
-	\textit{Student Developer}									\hfill http://rit.edu \\
-
-	Worked on the development of a keyboard and screen reader compatible ``drag and drop" programming environment based off of the Massachussetts Institute of Technology's ``Scratch" program.  Aided in the development of Inclusive Exploring Computer Science curriculum for visually impaired students.
-\end{addmargin}
-%%%%%%%%%%%%
-
-\bigskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Personal Projects
-% Projects and a brief descirption
-% Includes a link to github account
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent{\textbf{\large Personal Projects}}	\hfill http://github.com/VictoriaWeaver\\
-\begin{addmargin}[2cm]{0cm}
-	\textbf{Infrared Proximity Sensor}\\
-	IR LEDs are used for proximity sensing.  The proximity of an object is displayed on a scrolling 7-segment display and indicated with auditory feedback. \\
-
-	\textbf{LED Table}\\
-	LEDs are connected in a grid with cover of diffused Plexiglass, which is connected to Arduino Uno board and programmed to make various patterns and animations.\\
-
-	\textbf{Encryption Algorithm Speeds}\\
-	RSA and a symmetric key algorithm are implemented in Java and the runtime speeds are used to compare the algorithms.
-\end{addmargin}
-%%%%%%%%%%%%
-
-\bigskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Interests and Activities
-% Most recent and dedicated activities (leadership)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent{\textbf{\large Interests and Activities}}
-	\begin{addmargin}[2cm]{0cm}
-		CSH (Computer Science House)	\hfill http://csh.rit.edu
-		\begin{itemize}
-			\item Executive Board Evaluations Director
-			\item Charity Project Advisor
-		\end{itemize}
-		Intramural Broomball
-	\end{addmargin}
-%%%%%%%%%%%%
-	
+\section{\mysidestyle Personal Projects}
+    \begin{asparablank}
+        \item \textbf{MIPS-VHDL}: Implemented a portion of the MIPS assembly instruction set 
+            architecture in VHDL.\\
+        \item \textbf{Infrared Proximity Sensor}: Employed the use of infrared LEDs for proximity 
+            sensing in conjunction with seven segment displays and a buzzer for visual and auditory 
+            feedback.\\
+        \item \textbf{LED Table}: Constructed a programmable matrix of LEDs in a custom wooden 
+            case with a diffused Plexiglas cover to make various patterns and animations.\\
+        \item \textbf{Encryption Algorithm Speeds}: Implemented RSA and a symmetric key algorithm 
+            in Java to compare the execution time of the algorithms.
+    \end{asparablank}
+\section{\mysidestyle Interests \& Activities}
+    \begin{asparablank}
+        \item \textbf{Computer Science House (CSH) Member}: A Special Interest House at RIT that
+            provides a unique living and learning environment with access to facilities and other resources to promote
+            hands-on learning while still maintaining a social atmosphere.\\
+        \item \textbf{CSH Director of Evaluations (Spring 2016)}: Responsible for membership evaluations, requirements, and recruitment 
+            as well as serving as a liaison between CSH and RIT Residence Life.
+    \end{asparablank}
+\end{resume}
 \end{document}
