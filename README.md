@@ -3,6 +3,6 @@ Resume
 
 My resume.
 
-My name is Victoria Weaver and I am currently seeking a full time position in the field of digital logic design and verification (RTL).
+My name is Victoria Weaver and I am currently seeking a full time position in the field of FPGA design in the greater NYC area.
 
-I am a current student at the Rochester Institute of Technology in the Kate Gleason College of Engineering.  I am working towards a Bachelors of Science degree in Computer Engineering with a minor/concentration in Mathematics.  My anticipated graduation date is December, 2017.
+I am currently an Electrical Engineer in the Digital Technology Dept. of Northrop Grumman (MS). I have a Bachelors of Science degree in Computer Engineering with a minor/concentration in Mathematics from the Rochester Institute of Technology.
