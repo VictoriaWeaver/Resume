@@ -24,6 +24,7 @@
 \newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
 \newcommand{\rdate}[1]{\hfill {\small #1}}
 \renewcommand{\employer}[5]{ \item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
+\newcommand{\employermult}[3]{ \item[#1] - #2 \rdate{#3} \\}
 
 \begin{document}
 \name{\Large{Victoria E. Weaver} \hskip 0pt plus 2fil minus 0pt {\small{\href{mailto:vweaver2013@gmail.com}{vweaver2013@gmail.com} - (313) 207-3039}}}
@@ -33,14 +34,13 @@
 
 \section{\mysidestyle Work Experience}
     \begin{asparadesc}
-        \employer{Northrop Grumman Corporation}{Baltimore, MD}{March 2018 - Present}{Electronics Engineer}
-        {http://northropgrumman.com/}
-        \small Currently designing and implementing a digital beamforming module for Xilinx UltraScale+ technology. Using this opportunity to increase exposure to different DSP concepts.\smallskip\\
-        Lead designer of a FPGA on program centered on infrastructure and reuse. Included collaboration with board designers for P\&R, and resource and power consumption. Contributed to the configuration management plan for the program.\smallskip\\
-        Designed and implemented high speed serial transceiver interface. Based on Xilinx Aurora IP, implemented at 25GBPS for UltraScale+ technology. Development included trade study between Aurora protocol and Serial Front Panel Data Port protocol and much collaboration with representatives regarding third party IP.\smallskip\\
-        Implemented the whirligig function in VHDL for an Electronically Steering Antenna. Used HDL Designer to aid in the implementation of state machines and used ModelSim to simulate and debug the behavior. Documentation was also written to describe the functionality of the whirligig component.\smallskip\\
-        Debugged a SPI bus implemented in VHDL through simulations in ModelSim and in hardware with the use of an oscilloscope. Required closely following documentation of certain components and protocols in order to find any timing violations or larger issues in functionality of the design.
-        \\
+        \employermult{Northrop Grumman Corporation}{Baltimore, MD}{March 2018 - Present}
+        {Engineer Digital $\mid$ August 2019 - Present} \rurl{http://northropgrumman.com/}\\
+        {Associate Engineer Digital $\mid$ March 2018 - August 2019} \smallskip\\
+        \small Digital Design Engineer responsible for the design and implementation of a FPGA design for Xilinx UltraScale+ technology. Following department FPGA development process, including extensive documentation, collaborations with board designers, and configuration management.\smallskip\\
+        Led the development of high speed (25GB) serial transceiver interface for use across multiple programs. Design process included thorough trade study between two different protocols of Intellectual Property cores from third party vendors and developing positive relationships with representatives from those vendors.\smallskip\\
+        Contributed to the development of a git-based program configuration management plan focused on promoting reuse of existing department designs.\smallskip\\
+        Additional responsibilities included implementation of small DSP components and debugging existing components in simulation and in hardware.\\        
         \employer{Xelic, Inc.}{Pittsford, NY}{Summer 2017}{Product Development Engineering Intern}
         {http://xelic.com/}
         \small Worked on the verification for multiple functions of an existing networking IP core, written in VHDL. Collaborated on the design of blocks for a networking IP core in Verilog HDL, relating to Optical Transport Network (OTN)/packet processing.
